@@ -1,0 +1,31 @@
+<!DOCTYPE html> <!--By doctype we specify the contents of the file-->
+
+<html>
+
+<head>
+    <title>Weather</title>
+    <link rel="icon" href="./img/weather.png">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <div class="main-content">
+        {{>header}}
+        {{!-- place here everything you want to in this div so that Flex class can be applied 
+        on this div to move the footer in the bottom --}}
+        
+        <form>
+            <input placeholder="Location">
+            <button>Search</button>
+        </form>
+
+        <p id="message-1"></p>
+        <p id="message-2"></p>
+    </div>
+{{!-- <h1>{{title}}</h1> --}}
+<!--above is the code for accessing the handle bar object received from the render method-->
+{{>footer}}
+<script src="./js/app.js"></script>
+</body>
+
+</html>
